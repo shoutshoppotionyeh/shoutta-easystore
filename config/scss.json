@@ -1,0 +1,74 @@
+{
+  "current": "editor",
+  "presets": {
+    "editor": {
+      "body_font_family": [
+        "'微软雅黑','Microsoft YaHei','PingFang SC','Hiragino Sans GB',Arial,sans-serif"
+      ],
+      "body_font_size": "14px",
+      "body_text_color": "#000000",
+      "heading_font_family": [
+        "'微软雅黑','Microsoft YaHei','PingFang SC','Hiragino Sans GB',Arial,sans-serif"
+      ],
+      "heading_font_weight": "bolder",
+      "heading_font_size": "26px",
+      "heading_text_color": "#000000",
+      "body_bg_image": "\"\"",
+      "body_bg_color": "rgba(255, 255, 255, 1)",
+      "bg_img_position": "top center",
+      "body_bg_repeat": "no-repeat",
+      "body_bg_attachment": "fixed",
+      "wrapper_bg_color": "rgba(255, 255, 255, 1)",
+      "header_logo_font_family": [
+        "'微软雅黑','Microsoft YaHei','PingFang SC','Hiragino Sans GB',Arial,sans-serif"
+      ],
+      "topbar_font_family": [
+        "'微软雅黑','Microsoft YaHei','PingFang SC','Hiragino Sans GB',Arial,sans-serif"
+      ],
+      "button_font_family": [
+        "'HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif"
+      ],
+      "header_logo_font_weight": "bolder",
+      "header_logo_font_size": "35px",
+      "header_logo_color": "#FFFFFF",
+      "slider_text_font_size": "32px",
+      "slider_text_color": "#FFFFFF",
+      "slider_overlay_color": "#000000",
+      "slider_overlay_opacity": "0",
+      "slider_button_color": "#000000",
+      "slider_button_text_color": "#FFFFFF",
+      "highlight_collection_text_color": "#FFFFFF",
+      "highlight_collection_overlay_bg_color": "rgba(200, 183, 183, 0.3)",
+      "testimonial_slide_text_color": "#000000",
+      "testimonial_slide_bg_color": "rgba(255, 255, 255, 1)",
+      "testimonial_slide_link_color": "#D2A216",
+      "link_text_color": "#000000",
+      "logo_width": 300,
+      "topbar_text_color": "#000000",
+      "topbar_bg_color": "rgba(255, 255, 255, 1)",
+      "home_topbar_text_color": "#FFFFFF",
+      "home_topbar_bg_color": "rgba(0, 0, 0, 0)",
+      "topbar_text_align": "flex-start",
+      "topbar_font_size": "16px",
+      "topbar_font_weight": "bold",
+      "btn_font_weight": "bolder",
+      "btn_text_color": "#FFFFFF",
+      "btn_bg_color": "rgba(78, 78, 78, 1)",
+      "navi_border_color": "#EDEBE2",
+      "social_link_color": "#000000",
+      "parallax_title_text_color": "#FFFFFF",
+      "parallax_button_text_color": "#FFFFFF",
+      "parallax_button_color": "#000000",
+      "logo_list_text_color": "#000000",
+      "logo_list_bg_color": "rgba(227, 227, 227, 1)",
+      "footer_text_color": "#000000",
+      "footer_bg_color": "rgba(244, 244, 244, 1)",
+      "footer_bar_icon_bg_color": "rgba(255, 255, 255, 1)",
+      "footer_bar_icon_text_color": "#000000",
+      "mobile_nav_bg_color": "rgba(255, 255, 255, 1)",
+      "mobile_nav_text_color": "#000000",
+      "nav_checkout_btn_text_color": "#EDEBE2",
+      "nav_checkout_btn_color": "#AC1820"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="wrapper featured-blog-section">
+    {% if settings.featured_blog_title != '""' and settings.featured_blog_title != '' %}
+      <h2 class="section-header__title">{{settings.featured_blog_title}}</h2>
+    {% endif %}
+    <div class="blog-cards grid-uniform">
+        {% for i in (1..3) %}
+            {% capture articles_handle %}articles_handle_{{ i }}{% endcapture %}
+            {% assign handle = settings[articles_handle] %}
+
+            {% if handle != '""' and handle != '' %}
+              <div class="grid__item small--one-whole medium--one-half large--one-third">
+                <div href="/blogs/{{handle}}" class="blog-card">
+                  <div class="blog-img-wrapper">
+                      <img src="{{ articles[handle].image.src }}" width="300px" class="blog-img">
+                  </div>
+                  <div class="blog-details">
+                    <span class="blog-author">{{ articles[handle].author }}</span>
+                    <h5 class="blog-title">{{ articles[handle].title }} </h5>
+                    <div class="blog-description">
+                        {{ articles[handle].description | strip_html | truncatewords: 30 }} 
+                    </div>
+                    <a href="/blogs/{{handle}}" class="btn">{{ 'blogs.article.read_more' | t }}</a>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+        {% endfor %} 
+    </div>
+</div>

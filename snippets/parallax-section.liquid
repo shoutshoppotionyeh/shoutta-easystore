@@ -1,0 +1,62 @@
+{% if settings.parallax_img != '""' and settings.parallax_img != '' %}
+
+<div class="parallax-section">
+  <div class="parallax-bg-wrapper paraWrapper">
+    <div class="parallax-img-wrapper paraImg">
+      {% if settings.parallax_mobile_img != '""' and settings.parallax_mobile_img != '' %}
+        <div class="parallax-img parallax-mobile-img" style="background-image:url('{{ settings.parallax_mobile_img }}');">
+          <img class="hide" src="{{ settings.parallax_mobile_img }}" alt="{{ shop.name | escape }} | {{ settings.parallax_title }}"/>
+        </div>
+      {% endif %}
+      <div class="parallax-img" style="background-image:url('{{ settings.parallax_img }}');">
+        <img class="hide" src="{{ settings.parallax_img }}" alt="{{ shop.name | escape }} | {{ settings.parallax_title }}"/>
+      </div>
+    </div>
+    <div class="parallax-content-wrapper">
+      <div class="parallax-content" style="opacity: 0;">
+        {% if settings.parallax_title != '""' and settings.parallax_title != '' %}
+          <h2>{{ settings.parallax_title }}</h2>
+        {% endif %}
+        {% if settings.parallax_subtitle != '""' and settings.parallax_subtitle != '' %}
+          <p>{{ settings.parallax_subtitle }}</p>
+        {% endif %}
+        {% if settings.parallax_button_text != '""' and settings.parallax_button_text != '' %}
+        <a href="{{ settings.parallax_button_link }}" class="btn">{{ settings.parallax_button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  
+    $(window).scroll(function(){
+
+      var winScroll = $(this).scrollTop();
+
+      if ($('.paraWrapper').height()) {
+          var elemTop = ($('.paraWrapper').offset().top - ($(window).height() / 1.5));
+          var elemTop2 = $('.paraWrapper').offset().top;
+          var reachHere = $('.paraWrapper').offset().top - ($(window).height() * 1.4);
+          var reachLate = $('.paraWrapper').offset().top - ($(window).height() / 2.2);
+          var reachOut = $('.paraWrapper').offset().top + $('.paraWrapper').height() + 30;
+        
+          if (winScroll > reachHere && reachOut > winScroll) {
+            $('.paraImg').css({
+              'transform' : 'translate(0, -'+ (winScroll - elemTop) / 7 +'px)'
+            });
+          }
+          if (winScroll > reachLate && reachOut > winScroll) {
+            $('.parallax-content').css({
+              'transform' : 'translateY('+ (winScroll - elemTop2) / 10  +'px)',
+              'opacity' : '1'
+            });
+          }
+        
+      }
+    });
+}); 
+</script>
+
+{% endif %}
